@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Quản lý bán hàng</string>
+    <string name="db_name">appquanlybanhang.sql</string>
+    <string-array name="loai_san_pham">
+        <item>Mỹ phẩm</item>
+        <item>Quần</item>
+        <item>Áo</item>
+        <item>Thực phẩm</item>
+    </string-array>
+</resources>

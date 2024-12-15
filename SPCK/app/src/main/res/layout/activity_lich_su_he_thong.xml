@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <!-- Tiêu đề các cột -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#EA4269">
+
+                        <ImageView
+                            android:id="@+id/imgThoat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:src="@drawable/back" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="7dp"
+                            android:text="Lịch sử hệ thống"
+                            android:textColor="#E4FFFFFF"
+                            android:textSize="28dp"
+                            android:textStyle="bold" />
+
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#627B9B"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+
+                        <TextView
+                            android:id="@+id/tvTenHHTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Tên Hàng Hóa"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tvThoiGianTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Thời Gian"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:id="@+id/tvChucNangTitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Chức Năng"
+                            android:textColor="@android:color/white"
+                            android:textSize="16sp"
+                            android:gravity="center" />
+                </LinearLayout>
+
+                <!-- Danh sách lịch sử -->
+                <ListView
+                    android:id="@+id/lvLichSu"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:divider="@android:color/darker_gray"
+                    android:dividerHeight="1dp"
+                    android:paddingTop="8dp" />
+
+                <!-- Nút Export -->
+                <Button
+                    android:id="@+id/btnExport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:backgroundTint="#EA4269"
+                    android:padding="12dp"
+                    android:text="Export"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

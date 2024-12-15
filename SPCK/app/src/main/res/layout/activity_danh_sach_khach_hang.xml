@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EA4269"
+            android:elevation="4dp"
+            android:titleTextColor="#FFFFFF"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:contentInsetStart="0dp"
+            android:contentInsetEnd="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|start">
+
+                <!-- Nút Back -->
+                <ImageView
+                    android:id="@+id/imgback"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:contentDescription="back_button_description"
+                    android:focusable="true"
+                    android:padding="8dp"
+                    android:src="@drawable/back" />
+
+                <!-- Tiêu đề -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Danh sách khách hàng"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_weight="1" />
+
+                <!-- Nút Add -->
+                <ImageView
+                    android:id="@+id/imgAdd"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/baseline_playlist_add_24"
+                    android:padding="8dp"
+                    android:contentDescription="add_button_description"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_marginRight="8dp" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/edtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm khách hàng"
+            android:layout_marginTop="10dp"
+            android:padding="8dp" />
+
+        <!-- Danh sách khách hàng -->
+        <ListView
+            android:id="@+id/lvCustomerList"
+            android:layout_width="match_parent"
+            android:layout_height="660dp"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="0.5dp"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+    </LinearLayout>
+</ScrollView>

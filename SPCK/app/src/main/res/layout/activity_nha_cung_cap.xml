@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.NhaCungCap.NhaCungCapActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EA4269"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            android:contentInsetStart="0dp"
+            android:contentInsetEnd="0dp"
+            android:layout_gravity="start">
+
+            <ImageView
+                android:id="@+id/imgThoat"
+                android:src="@drawable/back"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvLichSuHeThong"
+                android:textColor="#E4FFFFFF"
+                android:textSize="28dp"
+                android:textStyle="bold"
+                android:paddingLeft="7dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nhà cung cấp" />
+            <ImageView
+                android:id="@+id/imgThemNhaCC"
+                android:src="@drawable/baseline_playlist_add_24"
+                android:layout_width="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="right"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content"/>
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/edtTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tìm kiếm theo tên, hoăc sđt"
+            android:layout_marginTop="10dp"
+            android:padding="8dp" />
+
+        <ListView
+            android:id="@+id/lvNhaCungCap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
